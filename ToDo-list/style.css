@@ -1,23 +1,22 @@
 * {
   padding: 0;
-  background-color: rgb(175, 37, 67);
   margin: 0;
 }
 body {
   height: 100%;
+  background-color: rgb(175, 37, 163);
 }
-.container {
-  background-color: white;
-  width: 40%;
-  min-height: 100px;
-  position: absolute;
-  top: 33%;
-  left: 30%;
-  border-radius: 10px;
+.glavni {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 17%;
 }
-#task {
-  background-color: transparent;
-  margin-top: 3%;
+#all-task {
+  display: none;
+}
+.ToDo {
+  padding: 20px 20px 20px 20px;
 }

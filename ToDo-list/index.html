@@ -8,11 +8,14 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div id="task">
-        <input placeholder="my to do list" />
-        <button>add</button>
+    <div class="glavni">
+      <div class="ToDo">
+        <h1>My ToDo List</h1>
+        <p>Click on task to mark as completed</p>
+        <input type="text" placeholder="Add some text" id="new-task" />
+        <button id="create-task">Add task</button>
       </div>
+      <ul id="all-task"></ul>
     </div>
     <script src="app.js"></script>
   </body>
