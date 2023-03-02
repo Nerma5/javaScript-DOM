@@ -9,14 +9,38 @@ body {
 .glavni {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
   max-width: 500px;
   margin: auto;
-  margin-top: 17%;
+  margin-top: 12%;
+  padding: 20px;
+  border-radius: 10px;
 }
-#all-task {
-  display: none;
-}
+
 .ToDo {
-  padding: 20px 20px 20px 20px;
+  padding: 50px 50px;
+  align-items: center;
+}
+#new-task {
+  margin-top: 2%;
+  padding: 10px;
+}
+#create-task {
+  padding: 10px;
+}
+.task {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: rgb(173, 91, 160);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.deleteItem {
+  display: none;
 }
