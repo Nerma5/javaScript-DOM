@@ -5,6 +5,7 @@ const batnAdd = document.querySelector("#create-task");
 const newItem = (text) => {
   const task = document.createElement("li");
   task.className = "task";
+
   task.innerHTML = `
     <p href="#" class="text">${text}</p>
     <button class="delete-button">Delete</button>`;
@@ -14,6 +15,8 @@ const newItem = (text) => {
     task.remove();
   });
   addedTask.appendChild(task);
+  deleteButton.style.border = "none";
+  deleteButton.style.padding = "5px";
   return task;
 };
 
