@@ -8,12 +8,18 @@ const newItem = (text) => {
   task.innerHTML = `
     <p href="#" class="text">${text}</p>
     <button class="delete-button">Delete</button>`;
+
+  const deleteButton = task.querySelector(".delete-button");
+  deleteButton.addEventListener("click", () => {
+    task.remove();
+  });
+  addedTask.appendChild(task);
   return task;
 };
 
 batnAdd.addEventListener("click", (e) => {
   e.preventDefault();
-  if (taskInput.value.length > 2) {
+  if (taskInput.value.length > 1) {
     addedTask.appendChild(newItem(taskInput.value));
     taskInput.value = "";
   } else {
