@@ -29,6 +29,7 @@ body {
 .tshirt2 {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .tshirt3 {
   display: flex;
@@ -37,4 +38,16 @@ body {
 
 img {
   width: 150px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+}
+
+#increment,
+#decrement {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
 }
