@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="glavniDiv">
+      <form name="forma" onsubmit="return validacija()">
+        <h2>LOG IN</h2>
+        <p>Please enter your email and password</p>
+        <input
+          name="email"
+          type="email"
+          placeholder="Enter Email"
+          class="box"
+        />
+        <input
+          name="password"
+          type="password"
+          placeholder="Enter Password"
+          class="box"
+        />
+        <input
+          name="confirm_password"
+          type="password"
+          placeholder="Confirm Password"
+          class="box"
+        />
+        <input type="submit" value="LOGIN" class="login" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
