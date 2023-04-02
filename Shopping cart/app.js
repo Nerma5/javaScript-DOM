@@ -2,6 +2,16 @@ let productsInCart = [];
 
 const products = document.querySelectorAll(".product");
 
+
+const updateShoppingCartHTML = function(){
+  if(productsInCart.length > 0){
+
+  }else{
+  }
+}
+
+
+
 function updateProductsInCart(product){
     for(let i= 0; i < productsInCart.length; i++){
         if(productsInCart[i].id == product.id){
@@ -10,6 +20,7 @@ function updateProductsInCart(product){
             return
         }
     }
+    productsInCart.push(product)
 }
 
 
