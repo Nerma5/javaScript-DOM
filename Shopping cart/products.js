@@ -11,7 +11,7 @@ const products = [
   {
     id: 1,
     name: "T-shirt 2",
-    price: 24.99,
+    price: 13,
     instock: 43,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     name: "T-shirt 3",
-    price: 19.99,
+    price: 13,
     instock: 10,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
