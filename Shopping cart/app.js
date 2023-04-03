@@ -5,8 +5,29 @@ const products = document.querySelectorAll(".product");
 
 const updateShoppingCartHTML = function(){
   if(productsInCart.length > 0){
+   let result = productsInCart.map(product =>{
+      return `
+      <div class="product">
+          <div class="image">
+            <img src= ${product.image} />
+          </div>
+          <div class="abtProduct">
+            <h4>${product.name}</h4>
+            <p>Cotton T-shirt</p>
+          </div>
+          
+          <div class="price">
+            <p>${product.price}</p>
+          </div>
+          <div class="add-to-cart">
+            <button id="addToCart" data-product-id="2">Add to cart</button>
+          </div>
+        </div>`
+    })
+    products.innerHTML = result.join("")
 
   }else{
+    products.innerHTML = `Your shopping cart is empty`
   }
 }
 
